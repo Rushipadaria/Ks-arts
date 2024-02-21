@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> #1 Online Gift Shop for personalised gifts
+        &ndash; KS ARTS COLLECTION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"
+        href="https://ksartscollection.com/cdn/shop/files/KS-FAVICON.png?crop=center&height=32&v=1684318818&width=32"
+        type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .ads {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #103948;
+            color: white;
+            padding: 10px;
+            font-size: 10px;
+            font-weight: 100;
+        }
+
+        .hed {
+            width: 100%;
+            background-color: #FCEFDF;
+        }
+
+        header {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        header .header-search a {
+            color: black;
+        }
+
+        header .header-search a:hover {
+            color: blueviolet;
+        }
+
+        header .header-logo {
+            width: 9%;
+        }
+
+        header .header-logo img {
+            width: 100%;
+        }
+
+        header .header-icon a {
+            color: black;
+        }
+
+        header .header-icon a:hover {
+            color: blueviolet;
+        }
+
+        .user {
+            margin-left: 12px;
+        }
+
+        .header {
+            width: 90%;
+            margin: 5% auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header .header-select a {
+            color: black;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .header .header-select a:hover {
+            text-decoration: underline;
+        }
+
+        .header .header-select select:hover {
+            text-decoration: underline;
+        }
+
+        .header .header-select select {
+            border: none;
+            background-color: #FCEFDF;
+            margin-left: 10px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .banner {
+            width: 100%;
+            margin-top: 2%;
+            height: inherit;
+        }
+
+        .banner img {
+            width: 100%;
+            height: inherit;
+        }
+
+        /* banner end  */
+        .container {
+            width: 90%;
+            margin: 5% auto 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container .container-content {
+            width: fit-content;
+            text-align: center;
+        }
+
+        .container .container-content h2 {
+            margin-bottom: 2%;
+        }
+
+        .container .container-content p {
+            margin-bottom: 4%;
+        }
+
+        .container .container-content a {
+            color: white;
+            background-color: #103948;
+            padding: 15px 25px;
+            text-decoration: none;
+        }
+
+        .ganesh {
+            width: 95%;
+            margin: 5% auto 0%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .ganesh .ganesh-image {
+            width: 30%;
+            height: inherit;
+        }
+
+        .ganesh .ganesh-image img {
+            width: 100%;
+            height: inherit;
+        }
+
+        .ganesh .ganesh-content {
+            width: 25%;
+            padding: 25px 0;
+        }
+
+        .ganesh .ganesh-content #ks {
+            padding-bottom: 15px;
+        }
+
+        .ganesh .ganesh-content h3 {
+            padding-bottom: 10px;
+        }
+
+        .ganesh .ganesh-content #qu {
+            padding-top: 10px;
+        }
+
+        .ganesh .ganesh-content .strip {
+            text-decoration: line-through;
+        }
+
+        .ganesh .ganesh-content .pad {
+            padding-left: 10px;
+        }
+
+        .ganesh .ganesh-content .border {
+            border: 1px solid red;
+            /* background-color: red; */
+            padding: 0px 10px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .ganesh .ganesh-content .border:hover {
+            border: 1px solid red;
+            background-color: red;
+            color: white;
+        }
+
+        .ganesh .ganesh-content .free {
+            padding: 15px 0px 0px;
+        }
+
+        .ganesh .ganesh-content .plus {
+            width: fit-content;
+            border: 1px solid black;
+            margin-top: 10px;
+            padding: 9px 30px;
+        }
+
+        .ganesh-content .qua {
+            width: fit-content;
+            margin-top: 5%;
+            border: 1px solid black;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .ganesh-content .qua-pos {
+            border-right: 1px solid black;
+            width: 100%;
+            padding: 0px 5px;
+            margin-right: 25px;
+        }
+
+        .ganesh-content .qua-pos a {
+            color: black;
+        }
+
+        .ganesh-content .qua-pos a:hover {
+            color: blueviolet;
+        }
+
+        .ganesh-content .qua-neg {
+            border-left: 1px solid black;
+            width: 100%;
+            padding: 0px 5px;
+            margin-left: 25px;
+        }
+
+        .ganesh-content .qua-neg a {
+            color: black;
+        }
+
+        .ganesh-content .qua-neg a:hover {
+            color: blueviolet;
+        }
+
+        .ganesh .btn {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+
+        .ganesh .btn .add {
+            width: 100%;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid #593625;
+            padding: 8px 20px;
+        }
+
+        .ganesh .btn .add a {
+            color: #593625;
+            text-decoration: none;
+        }
+
+        .ganesh .btn .add:hover {
+            border: 3px solid black;
+        }
+
+        .ganesh .btn .buy {
+            width: 100%;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid #593625;
+            margin-top: 5%;
+            padding: 8px 25px;
+            background-color: #103948;
+        }
+
+        .ganesh .btn .buy a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .ganesh .btn .buy:hover {
+            border: 3px solid black;
+        }
+
+        .ganesh-content .ganesh-bri {
+            width: fit-content;
+            margin-top: 5%;
+        }
+
+        .ganesh-content .ganesh-bri p {
+            color: #593625;
+        }
+
+        .ganesh-content .share {
+            width: fit-content;
+            display: flex;
+            margin-top: 5%;
+        }
+
+        .ganesh-content .share a {
+            color: #593625;
+            margin-top: 8px;
+            margin-right: 15px;
+        }
+
+        .ganesh-content .share .share-content h3 {
+            color: #593625;
+            font-size: 25px;
+        }
+
+        .ganesh-content .share .share-content a {
+            text-decoration: none;
+        }
+
+        .ganesh-content .share .share-content a:hover {
+            text-decoration: underline;
+        }
+
+        .ganesh-content .star i {
+            margin-right: 10px;
+        }
+
+        .ganesh-content .view {
+            width: fit-content;
+            display: flex;
+            margin-top: 5%;
+        }
+
+        .ganesh-content .view a {
+            color: #593625;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .ganesh-content .view a:hover {
+            text-decoration: underline;
+        }
+
+        .ganesh-content .view .view-arr {
+            margin-top: 5px;
+            color: #593625;
+        }
+
+        /* ganesh end  */
+        .perfect {
+            width: 90%;
+            margin: 5% auto 0%;
+        }
+
+        .perfect .perfect-con h2 {
+            font-size: 25px;
+            color: #121212;
+        }
+
+        /* perfect end  */
+        .gift {
+            width: 90%;
+            margin: 1% auto 0%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gift-under {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .gift .gift-pic {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            /* height: 250px; */
+            overflow: hidden !important;
+        }
+
+        .gift .gift-pic img {
+            transition: all .4s linear;
+            width: 100%;
+            height: inherit;
+        }
+
+        .gift .gift-pic:hover img {
+            transform: scale(1.2);
+        }
+
+        /* .gift .gift-pic:hover  img{
+            transform: scale(1.05);
+        } */
+
+        .gift .gift-content {
+            margin-top: 5%;
+        }
+
+        .gift .gift-content a {
+            color: #121212;
+            text-decoration: none;
+        }
+
+        .gift .gift-content a:hover {
+            text-decoration: underline;
+
+        }
+
+        .dry {
+            margin: 3% auto 0%;
+        }
+
+        /* .gift end  */
+        .Gardening-p {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+        }
+
+        .Gardening-p h2 {
+            color: #121212;
+            font-weight: 100;
+        }
+
+        .Gardening-p p {
+            color: #4C4945;
+            font-size: 20px;
+            text-transform: capitalize;
+            padding-top: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hed">
+        <div class="ads">
+            <h2>Welcome to our online gift shop | Get Free Delivery | 10% Discount on First Order</h2>
+        </div>
+
+        <!-- ****header start**** -->
+        <header>
+            <div class="header-search">
+                <a href="/Search.html" target="_parent">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="#"><img
+                        src="https://ksartscollection.com/cdn/shop/files/Your_1_Online_Gift_Shop_for_Customized_and_PERSONALISED_GIFTS.png?v=1694957644&width=135"
+                        alt=""></a>
+            </div>
+            <div class="header-icon">
+                <a href="#"><i class="fa-solid fa-bag-shopping fa-2xl"></i></a>
+                <a href="#"><i class="fa-solid fa-user fa-2xl user"></i></a>
+            </div>
+        </header>
+        <div class="header">
+            <div class="header-select">
+                <a href="#">Home</a>
+                <a href="#">Shop All</a>
+                <select name="Gifts Hamper">
+                    <option value="Gifts Hamper">All Gifts Hamper</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Annivarsary Gifts">Annivarsary Gifts</option>
+                </select>
+                <select>
+                    <option value="Garden Gift">Garden Gift</option>
+                    <option value="Planter">Planter</option>
+                    <option value="Gift of Plants">Gift of Plants</option>
+                    <option value="Plant care">Plant care</option>
+                </select>
+                <a href="#">Idol & Showpiece</a>
+                <a href="#">Home and Interior Gifts</a>
+                <select name="Aromatic Gift">
+                    <option value="Aromatic Gift">Aromatic Gift</option>
+                    <option value="Scented Candle">Scented Candle</option>
+                    <option value="Oil Diffuser">Oil Diffuser</option>
+                </select>
+                <a href="#">Greeting Card</a>
+                <select>
+                    <option value="Customer Portal">Customer Portal</option>
+                    <option value="About Us">About Us</option>
+                    <option value="FAQS">FAQS</option>
+                    <option value="Blogs">Blogs</option>
+                    <option value="Contact">Contact</option>
+                    <option value="Track Order">Track Order</option>
+                </select>
+            </div>
+        </div>
+        <!-- ****header end**** -->
+        <!-- ****Banner start**** -->
+        <div class="banner">
+            <img src="https://ksartscollection.com/cdn/shop/files/ka-arts-collection-onine-gift-shop-personalised-gift-customized-gift.jpg?v=1700572435&width=2000"
+                alt="">
+        </div>
+        <!-- ****Banner end**** -->
+        <!-- ****Ganesh start**** -->
+        <div class="container">
+            <div class="container-content">
+                <h2>Best Online Gift Shop For Personalised Gift and Customized Gift</h2>
+                <p>Make your loved ones feel truly special with KS Arts Collection - the one-stop online gift shop that
+                    delivers <br> heartwarming, Personalised and customized gifting solutions.</p>
+                <a href="#">Shop All</a>
+            </div>
+        </div>
+        <div class="ganesh">
+            <div class="ganesh-image">
+                <a href="#"><img
+                        src="https://ksartscollection.com/cdn/shop/files/KS-Good-Luck-Ganesha-Idol-showpiece.jpg?v=1695406471&width=713"
+                        alt=""></a>
+            </div>
+            <div class="ganesh-content">
+                <p id="ks">
+                    KS ARTS COLLECTION
+                </p>
+                <h3>KS Good Luck Ganesha Idol <br> Showpiece</h3>
+                <p><span class="strip">Rs 350.00</span> <span class="pad"> Rs. 149.00 </span> <span
+                        class="border">Sale</span></p>
+                <p class="free">Tax Included Free Home Delivery</p>
+                <p id="qu">Quantity</p>
+                <div class="qua">
+                    <div class="qua-pos">
+                        <a href=""><i class="fa-solid fa-plus fa-sm"></i></a>
+                    </div>
+                    <div class="qua-num">
+                        1
+                    </div>
+                    <div class="qua-neg">
+                        <a href="#"><i class="fa-solid fa-minus fa-sm"></i></a>
+                    </div>
+                </div>
+                <div class="btn">
+                    <div class="add">
+                        <a href="#" id="Add">Add to cart</a>
+                    </div>
+                    <div class="buy">
+                        <a href="#" id="buy">Buy it now</a>
+                    </div>
+                </div>
+                <div class="ganesh-bri">
+                    <p>
+                        Brighten up any space with KS Good Luck Ganesha IdolShowpiece! It's a fantastic personalised
+                        gift, all the way from Mumbai,available at our online gift shop.
+                    </p>
+                </div>
+                <div class="share">
+                    <a href="#"><i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i></a>
+                    <div class="share-content">
+                        <a href="#">
+                            <h3>share</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    (3)
+                </div>
+                <div class="view">
+                    <a href="">
+                        <h4>View full details</h4>
+                    </a>
+                    <div class="view-arr">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ****Ganesh end**** -->
+
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>Unveiling the Perfect Gifts for Every Price Range</h2>
+            </div>
+        </div>
+        <!-- ****perfect end**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-100.jpg?v=1700748391&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 100</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-200.jpg?v=1700748923&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 200</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-500.jpg?v=1700749132&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 500</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-1000.jpg?v=1700749257&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 1000</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>Unwrap the Perfect Present: Gifts for Every Beloved Recipient in Your Life</h2>
+            </div>
+        </div>
+        <!-- ****perfect end**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Best-Personalised-Gifts-for-Him.jpg?v=1700749490&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Best Personalised Gift For Him</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Customized-gifts-for-her.jpg?v=1700749370&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Gift for Her</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Customized-Gift-for-Couple.jpg?v=1700749792&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Custormized Gift For Couple</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Best-Gift-for-Bhai-Dooj.jpg?v=1700749344&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Best Gift For Bhai</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>Discover the Best Selection of Products by Category.</h2>
+            </div>
+        </div>
+        <!-- ****perfect End**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Dry-Fruit-Gifts.jpg?v=1700749640&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Dry Fruit Gifts</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Chocolate-Gifts.jpg?v=1700749541&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Chocolate Gifts</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Cookies-Gift-Hampers.jpg?v=1700749567&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Cookies Gift Hampers</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/kate-darmody-UWdfLl3ggm8-unsplash.jpg?v=1692861050&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>All Planters, Pot</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gift dry">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/art-and-soil-bangalore-I5ofzP2nICE-unspslash.jpg?v=1700749870&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift of Plants</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/dded.jpg?v=1692860969&width=535" alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Aroma Section</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/art-and-soil-bangalore-I5ofzP2nICE-unsplash_551d4ca3-2ff5-4571-b1b8-8a24842c6166.jpg?v=1692861221&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Idol, Showpiece</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/art-and-soil-bangalore-I5ofzZP2nICE-unsplash.jpg?v=1692861090&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Greeting Card</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>The Perfect Present: Handpicked Gifts for Every Occasion</h2>
+            </div>
+        </div>
+        <!-- ****perfect End**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/lidya-nada-MD_ha01Bk7c-unsplash.jpg?v=1692860874&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Birthday Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/tanmay-okkDM8fQM7c-unsplash.jpg?v=1692860341&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Anniversary Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/katelyn-macmillan-X1504kwZTnI-unsplash.jpg?v=1692860283&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Engagement Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/drew-coffman-llWjwo200fo-unsplash.jpg?v=1692860316&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Wedding Gift</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gift dry">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/freestocks-k-Rp0V0XWWU-unsplash.jpg?v=1692861596&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Corporate Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/house-g8824e1ddf_1280.jpg?v=1692860203&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized House Warming Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/mediamodifier-PKdcZz-o6bw-unsplash.jpg?v=1692860836&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Baby Shower Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/scott-warman-rrYF1RfotSM-unsplash.jpg?v=1692860151&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Get Together Gift</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****Gardening start**** -->
+        <div class="container">
+            <div class="Gardening-p">
+                <h2>Discover the Art of Gardening with Stunning Ceramic Planters.</h2>
+                <p>Spruce up your green spaces with ks arts collection's Ceramic Planters now available at our Online
+                    Gift
+                    Shop, perfectly designed for Personalised gifts.</p>
+            </div>
+            <div class="Gardening">
+                <div class="gardening-plot">
+                    <img src="" alt="">
+                    <h4></h4>        
+                    <p></p>
+                    <p><span></span></p>
+                    <a href=""></a>
+                </div>
+                <div class="gardening-plot">
+                    <img src="" alt="">
+                    <h4></h4>        
+                    <p></p>
+                    <p><span></span></p>
+                    <a href=""></a>
+                </div>
+                <div class="gardening-plot">
+                    <img src="" alt="">
+                    <h4></h4>        
+                    <p></p>
+                    <p><span></span></p>
+                    <a href=""></a>
+                </div>
+                <div class="gardening-plot">
+                    <img src="" alt="">
+                    <h4></h4>        
+                    <p></p>
+                    <p><span></span></p>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- ****Gardening end**** -->
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

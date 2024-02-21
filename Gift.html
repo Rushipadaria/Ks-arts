@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> #1 Online Gift Shop for personalised gifts
+        &ndash; KS ARTS COLLECTION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"
+        href="https://ksartscollection.com/cdn/shop/files/KS-FAVICON.png?crop=center&height=32&v=1684318818&width=32"
+        type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="media1.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
+</head>
+<style>
+    @media screen and (max-width:1024px) {
+        .gift-under {
+            height: inherit;
+        }
+
+        .Gardening-p p {
+            margin-bottom: 1%;
+        }
+
+        .gardening-plot {
+            height: inherit;
+        }
+
+        .gardening-plot img {
+            height: inherit;
+            margin-bottom: 3%;
+        }
+
+        .gardening-plot .pad1 {
+            margin-bottom: 5%;
+        }
+
+        .gardening-plot .pad2 {
+            margin-bottom: 13.9%;
+        }
+
+        .collection-img #para {
+            width: fit-content;
+            letter-spacing: 1px;
+            padding: 0% 3%;
+        }
+
+        .Footer-rt .icon {
+            display: inline-block;
+        }
+    }
+
+    @media screen and (max-width:769px) {
+        .header-select {
+            display: none;
+        }
+
+        .header-icon {
+            width: max-content;
+        }
+
+        .header-icon .user {
+            display: none;
+        }
+
+        .hidden1 {
+            display: inline-block;
+            color: black;
+            font-size: 25px;
+            align-items: center;
+        }
+
+        .ganesh {
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        .ganesh .ganesh-image {
+            width: 100%;
+            padding: 2%;
+        }
+
+        .ganesh .ganesh-image img {
+            width: 100%;
+        }
+
+        .ganesh .ganesh-content {
+            width: 100%;
+            padding: 2%;
+            text-align: center;
+        }
+
+        .ganesh .ganesh-content #ks {
+            font-size: 21px;
+        }
+
+        .ganesh .ganesh-content h3 {
+            font-size: 29px;
+            padding-bottom: 1%;
+        }
+
+        .gift {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .gift .gift-pic {
+            width: 100%;
+        }
+
+        .gift .gift-pic .gift-under {
+            width: 100%;
+        }
+
+        .gift .gift-pic .gift-content a h3 {
+            text-align: center;
+            margin-top: -3%;
+            padding-bottom: 2%;
+        }
+
+        .gift .gift-pic .gift-under img {
+            width: 100%;
+            padding: 0% 4%;
+        }
+
+        .Gardening {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .Gardening .gardening-plot {
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        .Gardening .gardening-plot img {
+            width: 100%;
+        }
+
+        .Gardening .gardening-plot a {
+            margin-top: 5%;
+        }
+
+        .collection {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .collection .collection-img {
+            width: 100%;
+            text-align: center;
+        }
+
+        .collection .collection-img h4 {
+            width: fit-content;
+            text-align: center;
+        }
+
+        .collection .collection-img IMG {
+            width: 100%;
+            margin: 3% 0%;
+        }
+
+        .collection-2 {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .collection-2 .collection-img1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .collection-2 .collection-img1 img {
+            width: 100%;
+            margin: 3% 0%;
+        }
+
+        .Memories {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .Memories .memories-img {
+            width: 100%;
+            text-align: center;
+        }
+
+        .Memories .memories-img img {
+            width: 100%;
+            margin: 3% 0%;
+        }
+
+        .blog {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .blog .blog-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .blog .blog-content h2 {
+            margin: -5% 0% 0%;
+        }
+
+        .blog .blog-content p {
+            padding-bottom: 5%;
+        }
+
+        .blog .blog-content img {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .footer-up {
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .footer-up .footer-lt {
+            width: 100%;
+        }
+
+        .footer-up .footer-lt h3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-up .footer-lt a {
+            width: 100%;
+        }
+
+        .Footer-lt input {
+            color: white;
+            width: 140%;
+            background-color: #593625;
+            border: 1px solid white;
+            margin-top: 8%;
+            margin-bottom: 8%;
+            margin-left: -25%;
+            padding: 15px 5px;
+        }
+
+        .footer-up .Footer-rt {
+            width: 100%;
+            padding: 6%;
+        }
+
+        .footer-up .Footer-rt .icon {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-down {
+            width: 100%;
+        }
+
+        .footer-down .footer-icon {
+            width: 100%;
+        }
+
+        .footer-down .footer-content li {
+            width: 100%;
+            list-style: none;
+            text-align: center;
+            padding: 3%;
+        }
+    }
+
+    @media screen and (max-width:601px) {
+        .hed {
+            width: 150%;
+        }
+    }
+
+    @media screen and (max-width:334px) {
+        .hed {
+            width: 200%;
+        }
+    }
+
+    @media screen and (max-width:233px) {
+        .hed {
+            width: 230%;
+        }
+    }
+
+    @media screen and (max-width:196px) {
+        .hed {
+            width: 233%;
+        }
+    }
+
+    @media screen and (max-width:184px) {
+        .hed {
+            width: 245%;
+        }
+    }
+
+    @media screen and (max-width:168px) {
+        .hed {
+            width: 265%;
+        }
+    }
+
+    @media screen and (max-width:152px) {
+        .hed {
+            width: 286%;
+        }
+    }
+
+    @media screen and (max-width:399px) {
+        .hed {
+            width: 200%;
+        }
+    }
+
+    @media screen and (max-width:226px) {
+        .hed {
+            width: 226%;
+        }
+    }
+
+    @media screen and (max-width:599px) {
+        footer {
+            width: 150%;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        footer {
+            width: 200%;
+        }
+    }
+
+    @media screen and (max-width:399px) {
+        footer {
+            width: 200%;
+        }
+    }
+
+    /* ------- */
+   
+</style>
+
+<body>
+
+    <section class="hed">
+        <div class="ads">
+            <marquee behavior="" dirsection="">
+                <h2>Welcome to our online gift shop | Get Free Delivery | 10% Discount on First Order</h2>
+            </marquee>
+            <h2 class="none">Welcome to our online gift shop | Get Free Delivery | 10% Discount on First Order</h2>
+        </div>
+
+        <!-- ****header start**** -->
+        <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="header-search">
+                <a href="/Search.html" target="_parent">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="#"><img
+                        src="https://ksartscollection.com/cdn/shop/files/Your_1_Online_Gift_Shop_for_Customized_and_PERSONALISED_GIFTS.png?v=1694957644&width=135"
+                        alt=""></a>
+            </div>
+            <div class="header-icon">
+                <div class="bags">
+                    <a href="/login.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+                <a href="cart.html" style="margin-left: 21px;"><i class="fa-solid fa-bag-shopping fa-2xl user"></i></a>
+            </div>
+            <a href="#"><i class="fa-solid fa-bars hidden1"></i></a>
+            </div>
+        </header>
+        <div class="header" data-aos="zoom-out" data-aos-duration="3000" data-aos-easing="linear">
+            <div class="header-select">
+                <a href="#">Home</a>
+                <a href="shopall.html">Shop All</a>
+                <select name="Gifts Hamper">
+                    <option value="Gifts Hamper">All Gifts Hamper</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Annivarsary Gifts">Annivarsary Gifts</option>
+                </select>
+                <select>
+                    <option value="Garden Gift">Garden Gift</option>
+                    <option value="Planter">Planter</option>
+                    <option value="Gift of Plants">Gift of Plants</option>
+                    <option value="Plant care">Plant care</option>
+                </select>
+                <a href="Showpiece.html">Idol & Showpiece</a>
+                <a href="#">Home and Interior Gifts</a>
+                <select name="Aromatic Gift">
+                    <option value="Aromatic Gift">Aromatic Gift</option>
+                    <option value="Scented Candle">Scented Candle</option>
+                    <option value="Oil Diffuser">Oil Diffuser</option>
+                </select>
+                <a href="#">Greeting Card</a>
+                <select>
+                    <option value="Customer Portal">Customer Portal</option>
+                    <option value="About Us">About Us</option>
+                    <option value="FAQS">FAQS</option>
+                    <option value="Blogs">Blogs</option>
+                    <option value="Contact">Contact</option>
+                    <option value="Track Order">Track Order</option>
+                </select>
+            </div>
+        </div>
+        <!-- ****header end**** -->
+        <!-- ****Banner start**** -->
+        <div class="banner">
+            <img src="https://ksartscollection.com/cdn/shop/files/ka-arts-collection-onine-gift-shop-personalised-gift-customized-gift.jpg?v=1700572435&width=2000"
+                alt="">
+        </div>
+        <!-- ****Banner end**** -->
+        <!-- ****Ganesh start**** -->
+        <div class="container">
+            <div class="container-content">
+                <h2>Best Online Gift Shop For Personalised Gift and Customized Gift</h2>
+                <p>Make your loved ones feel truly special with KS Arts Collection - the one-stop online gift shop that
+                    delivers <br> heartwarming, Personalised and customized gifting solutions.</p>
+                <a href="#">Shop All</a>
+            </div>
+        </div>
+        <div class="ganesh">
+            <div class="ganesh-image">
+                <img src="https://ksartscollection.com/cdn/shop/files/KS-Good-Luck-Ganesha-Idol-showpiece.jpg?v=1695406471&width=713"
+                    alt="" id="im" onclick="cm()" style="cursor: pointer;">
+            </div>
+            <div class="ganesh-content">
+                <p id="ks">
+                    KS ARTS COLLECTION
+                </p>
+                <h3>KS Good Luck Ganesha Idol <br> Showpiece</h3>
+                <p><span class="strip">Rs 350.00</span> <span class="pad"> Rs. 149.00 </span> <span
+                        class="border">Sale</span></p>
+                <p class="free">Tax Included Free Home Delivery</p>
+                <p id="qu">Quantity</p>
+                <div class="qua">
+                    <div class="qua-pos">
+                        <a href=""><i class="fa-solid fa-plus fa-sm"></i></a>
+                    </div>
+                    <div class="qua-num">
+                        1
+                    </div>
+                    <div class="qua-neg">
+                        <a href="#"><i class="fa-solid fa-minus fa-sm"></i></a>
+                    </div>
+                </div>
+                <div class="btn">
+                    <div class="add">
+                        <a href="#" id="Add">Add to cart</a>
+                    </div>
+                    <div class="buy">
+                        <a href="#" id="buy">Buy it now</a>
+                    </div>
+                </div>
+                <div class="ganesh-bri">
+                    <p>
+                        Brighten up any space with KS Good Luck Ganesha IdolShowpiece! It's a fantastic personalised
+                        gift, all the way from Mumbai,available at our online gift shop.
+                    </p>
+                </div>
+                <div class="share">
+                    <a href="#"><i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i></a>
+                    <div class="share-content">
+                        <a href="#">
+                            <h3>share</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    (3)
+                </div>
+                <div class="view">
+                    <a href="">
+                        <h4>View full details</h4>
+                    </a>
+                    <div class="view-arr">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ****Ganesh end**** -->
+
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>Unveiling the Perfect Gifts for Every Price Range</h2>
+            </div>
+        </div>
+        <!-- ****perfect end**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-100.jpg?v=1700748391&width=535"
+                        alt="" id="op">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 100</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-200.jpg?v=1700748923&width=535"
+                        alt="" id="op2">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 200</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-500.jpg?v=1700749132&width=535"
+                        alt="" id="op3">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 500</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Gift-Under-1000.jpg?v=1700749257&width=535"
+                        alt="" id="op4">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift Under 1000</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>Unwrap the Perfect Present: Gifts for Every Beloved Recipient in Your Life</h2>
+            </div>
+        </div>
+        <!-- ****perfect end**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Best-Personalised-Gifts-for-Him.jpg?v=1700749490&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Best Personalised Gift For Him</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Customized-gifts-for-her.jpg?v=1700749370&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Gift for Her</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Customized-Gift-for-Couple.jpg?v=1700749792&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Custormized Gift For Couple</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Best-Gift-for-Bhai-Dooj.jpg?v=1700749344&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Best Gift For Bhai</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>Discover the Best Selection of Products by Category.</h2>
+            </div>
+        </div>
+        <!-- ****perfect End**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Dry-Fruit-Gifts.jpg?v=1700749640&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Dry Fruit Gifts</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Chocolate-Gifts.jpg?v=1700749541&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Chocolate Gifts</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/Cookies-Gift-Hampers.jpg?v=1700749567&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Cookies Gift Hampers</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/kate-darmody-UWdfLl3ggm8-unsplash.jpg?v=1692861050&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>All Planters, Pot</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gift dry">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/art-and-soil-bangalore-I5ofzP2nICE-unspslash.jpg?v=1700749870&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Gift of Plants</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/dded.jpg?v=1692860969&width=535" alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Aroma Section</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/art-and-soil-bangalore-I5ofzP2nICE-unsplash_551d4ca3-2ff5-4571-b1b8-8a24842c6166.jpg?v=1692861221&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Idol, Showpiece</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/art-and-soil-bangalore-I5ofzZP2nICE-unsplash.jpg?v=1692861090&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Greeting Card</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****perfect start**** -->
+        <div class="perfect">
+            <div class="perfect-con">
+                <h2>The Perfect Present: Handpicked Gifts for Every Occasion</h2>
+            </div>
+        </div>
+        <!-- ****perfect End**** -->
+
+        <!-- ****gift start**** -->
+        <div class="gift">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/lidya-nada-MD_ha01Bk7c-unsplash.jpg?v=1692860874&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Birthday Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/tanmay-okkDM8fQM7c-unsplash.jpg?v=1692860341&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Anniversary Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/katelyn-macmillan-X1504kwZTnI-unsplash.jpg?v=1692860283&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Engagement Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/drew-coffman-llWjwo200fo-unsplash.jpg?v=1692860316&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Wedding Gift</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gift dry">
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/freestocks-k-Rp0V0XWWU-unsplash.jpg?v=1692861596&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Corporate Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/house-g8824e1ddf_1280.jpg?v=1692860203&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized House Warming Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/mediamodifier-PKdcZz-o6bw-unsplash.jpg?v=1692860836&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Baby Shower Gift</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="gift-pic">
+                <div class="gift-under">
+                    <img src="https://ksartscollection.com/cdn/shop/collections/scott-warman-rrYF1RfotSM-unsplash.jpg?v=1692860151&width=535"
+                        alt="">
+                </div>
+                <div class="gift-content">
+                    <a href="#">
+                        <h3>Customized Get Together Gift</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ****gift End**** -->
+        <!-- ****Gardening start**** -->
+        <div class="main-cont">
+            <div class="Gardening-p">
+                <h2>Discover the Art of Gardening with Stunning Ceramic Planters.</h2>
+                <p>Spruce up your green spaces with ks arts collection's Ceramic Planters now available at our Online
+                    Gift
+                    Shop, perfectly designed for Personalised gifts.</p>
+            </div>
+            <div class="Gardening">
+                <div class="gardening-plot">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-Hanging-Ceramic-Pot.jpg?v=1690735685&width=360"
+                        alt="">
+                    <h4>KS Hanging Ceramic Pot</h4>
+                    <p>ks arts collection</p>
+                    <p class="pad1 pad2"><del>Rs. 450.00</del>Rs. 350.00</p>
+                    <a href="" id="mar">Add to cart</a>
+                </div>
+                <div class="gardening-plot">
+                    <img src="https://ksartscollection.com/cdn/shop/products/KS-Little-Cup-Ceramic-Pot-planter-1.jpg?v=1695968929&width=360"
+                        alt="">
+                    <h4>KS Little Cup Ceramic Pot Planter</h4>
+                    <p>ks arts collection</p>
+                    <p class="pad1"><del>Rs. 350.00</del>Rs. 199.00</p>
+                    <a href="">Choose options</a>
+                </div>
+                <div class="gardening-plot">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-Classy-Designer-Ceramic-Pot-planter.jpg?v=1700585298&width=360"
+                        alt="">
+                    <h4>KS Classy Designer Ceramic Pot Planter</h4>
+                    <p>Ks arts collection</p>
+                    <p class="pad1"><del>Rs. 850.00</del>Rs. 599.00</p>
+                    <a href="">Add to cart</a>
+                </div>
+                <div class="gardening-plot">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-Clay-Pot-with-Tray-planter.jpg?v=1700589006&width=360"
+                        alt="">
+                    <h4>KS Clay Pot with Tray Planter</h4>
+                    <p>ks arts collection</p>
+                    <p class="pad1 pad2"><del>Rs. 550.00</del>Rs. 450.00</p>
+                    <a href="">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="view">
+            <a href="#">View all</a>
+        </div>
+        <!-- ****Gardening end**** -->
+        <!-- ****collection start**** -->
+        <div class="main-cont">
+            <div class="collection-p">
+                <h4>Explore Our Fresh Collection of New Arrivals.</h4>
+                <p>Explore ks arts collection's Featured collection, an enticing hub for personalised gifts. Discover
+                    the perfect present in our online gift shop.</p>
+            </div>
+            <div class="collection">
+                <div class="collection-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-Cocopeat-Block.jpg?v=1696496790&width=360"
+                        alt="">
+                    <h4>KS Cocopeat Block</h4>
+                    <p><del>Rs.799.00</del>Rs.499.00</p>
+                </div>
+                <div class="collection-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-leaf-mould.jpg?v=1690100717&width=360"
+                        alt="">
+                    <h4 id="para">KS Leaf Mould Fertilizer</h4>
+                    <p><del>Rs.199.00</del>Rs.99.00</p>
+                </div>
+                <div class="collection-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-neem-cake-powder-fertilizer.jpg?v=1690100744&width=360"
+                        alt="">
+                    <h4>KS Neem Cake Powder Fertilizer</h4>
+                    <p><del>Rs.199.00</del>Rs.99.00</p>
+                </div>
+                <div class="collection-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-washed-cinder-substrate.jpg?v=1690100938&width=360"
+                        alt="">
+                    <h4 id="para">KS Washed Cinder Substrate</h4>
+                    <p><del>Rs.250.00</del>Rs.199.00</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="collection-2">
+                <div class="collection-img1">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-castor-cake-powder-fertilizer.jpg?v=1690101038&width=360"
+                        alt="">
+                    <h4>KS Castor Cake Powder Fertilizer</h4>
+                    <p><del>Rs.799.00</del>Rs.499.00</p>
+                </div>
+                <div class="collection-img1">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-laxmi-kamal-sempervivum-succulent.jpg?v=1690734712&width=360"
+                        alt="">
+                    <h4>KS Laxmi Kamal Sempervivum Succulent</h4>
+                    <p><del>Rs.199.00</del>Rs.99.00</p>
+                </div>
+                <div class="collection-img1">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-Electric-Aroma-Oil-Diffuser-Lamp.jpg?v=1697739033&width=360"
+                        alt="">
+                    <h4>KS Electric Aroma Oil Diffuser Lamp</h4>
+                    <p><del>Rs.199.00</del>Rs.99.00</p>
+                </div>
+                <div class="collection-img1">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-Sedum-Angelina-Plant.jpg?v=1690734626&width=360"
+                        alt="">
+                    <h4>KS Sedum Angelina Plant - Succulent</h4>
+                    <p><del>Rs.250.00</del>Rs.199.00</p>
+                </div>
+            </div>
+            <div class="view">
+                <a href="#">View all</a>
+            </div>
+            <!-- ****collection end**** -->
+            <!-- ****Memories start**** -->
+            <div class="collection-p">
+                <h4>Create Lasting Memories with Customized Gift Hampers.</h4>
+                <p>Surprise your near and dear ones with personalised gifts! Order your Customized Gift Hampers from KS
+                    Arts Collection's Online Gift Shop today!</p>
+            </div>
+            <div class="Memories">
+                <div class="memories-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-charming-laxmi-kamal-succulent-gift-hamper.jpg?v=1692900475&width=360"
+                        alt="">
+                    <h5>KS Charming Laxmi Kamal Succulent Gift Hamper</h5>
+                    <p><span>Rs.950.00</span>Rs.549.00</p>
+                </div>
+                <div class="memories-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/KS-perfect-peace-and-good-luck-Jade-plant-gift-hamper.jpg?v=1700633132&width=360"
+                        alt="">
+                    <h5>KS Peace and Good Luck Jade Plant Gift Hamper</h5>
+                    <p><span>Rs.950.00</span>Rs.850.00</p>
+                </div>
+                <div class="memories-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-light-up-your-blessings-vighnaharta-ganesha-gift-hamper.jpg?v=1700633676&width=360"
+                        alt="">
+                    <h5>KS Light Up Your Blessings Ganesha Gift Hamper</h5>
+                    <p><span>Rs.850.00</span>Rs.749.00</p>
+                </div>
+                <div class="memories-img">
+                    <img src="https://ksartscollection.com/cdn/shop/files/ks-peaceful-bliss-meditating-buddha-gift-hamper.jpg?v=1700633700&width=360"
+                        alt="">
+                    <h5>KS Peaceful Meditating Buddha Gift Hamper</h5>
+                    <p><span>Rs.850.00</span>Rs.749.00</p>
+                </div>
+            </div>
+            <!-- ****Memories end**** -->
+            <!-- ****Blog start**** -->
+            <div class="collection-p oi">
+                <h4>Blog posts</h4>
+            </div>
+            <div class="blog">
+                <div class="blog-content">
+                    <img src="https://ksartscollection.com/cdn/shop/articles/How-to-Say-Thank-You-for-an-Unexpected-Gift.jpg?v=1702734109&width=720"
+                        alt="">
+                    <h2>How to Say Thank You for an Unexpected Gift</h2>
+                    <p>
+                        IntroductionReceiving an unexpected gift can be a delightful surprise that brings joy and
+                        appreciation. Whether it's a birthday, a holiday, or just a random act of kindness, expressing
+                        gratitude for...
+                    </p>
+                </div>
+                <div class="blog-content">
+                    <img src="https://ksartscollection.com/cdn/shop/articles/Diwali-Hamper-Ideas.jpg?v=1699295112&width=720"
+                        alt="">
+                    <h2>Diwali Hamper Ideas</h2>
+                    <p>
+                        Diwali hampers, also known as Diwali gift baskets or Diwali gift boxes, are a popular way to
+                        celebrate the festival of lights and show your appreciation to friends and family...
+                    </p>
+                </div>
+                <div class="blog-content">
+                    <img src="https://ksartscollection.com/cdn/shop/articles/Navratri-Gift-Ideas.jpg?v=1697479355&width=720"
+                        alt="">
+                    <h2>Navratri Gift Ideas</h2>
+                    <p>
+                        Navratri, the nine-night Hindu festival, is just around the corner. It is a time of joy,
+                        worship, and celebration. As....
+                    </p>
+                </div>
+                <div class="blog-content">
+                    <img src="https://ksartscollection.com/cdn/shop/articles/Should-you-gift-Bamboo-Plant-and-Best-plants-as-return-gift.jpg?v=1696612928&width=720"
+                        alt="">
+                    <h2>Should you gift Bamboo Plant and Best plants as...</h2>
+                    <p>
+                        Giving someone a bamboo plant as a gift can be a thoughtful and meaningful gesture, but whether
+                        it's the best choice depends on the recipient's personal taste, lifestyle, and cultural....
+                    </p>
+                </div>
+            </div>
+            <div class="blog-view">
+                <a href="#">View all</a>
+            </div>
+            <!-- ****Blog end**** -->
+
+            <div class="content">
+                <div class="content-head">
+                    <h2>KS Arts Collection - Mumbai's Premier Online Gift Shop</h2>
+                </div>
+                <div class="content-para">
+                    <p><span>Our Mission: </span>
+                        At KS Arts Collection, our mission is to help people express their emotions and sentiments
+                        through the art of gifting. We believe that a well-chosen gift has the power to create lasting
+                        memories and strengthen bonds, and we are dedicated to making every gifting occasion special.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Product Range:</span>
+                        Our diverse product range caters to a wide spectrum of tastes and preferences. We specialize in
+                        offering personalized gifts that leave a lasting impression. Our offerings include:
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Plants:</span>
+                        Choose from an array of lush and vibrant plants, perfect for adding a touch of greenery to any
+                        space. Personalization options are available, including engraved pots and custom plant
+                        arrangements.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Ceramic Planters:</span>
+                        Elevate your indoor or outdoor decor with our exquisite ceramic planters. These stylish and
+                        durable containers complement any plant and make for fantastic gifts.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Idol and Showpiece: </span>
+                        Discover intricately crafted idols and showpieces that celebrate spirituality, culture, and
+                        aesthetics. These items make meaningful gifts for various occasions.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Scented Candles:</span>
+                        Immerse yourself in a world of soothing aromas with our scented candles. We offer an extensive
+                        selection of fragrances to set the perfect mood.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Aroma Oil Diffusers:</span>
+                        Create a serene atmosphere in your living space with our aroma oil diffusers. They not only
+                        diffuse delightful scents but also serve as elegant decor pieces.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Handicraft:</span>
+                        Explore our handpicked collection of handcrafted items that showcase the rich artistry of Indian
+                        artisans. Each piece tells a unique story and makes for a cherished gift.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Customized Gift Hampers:</span>
+                        Craft your own personalized gift hampers with a mix of our products. From birthday surprises to
+                        corporate gifting solutions, our hampers are designed to impress.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Why Choose KS Arts Collection: <br></span>
+                        Quality and Craftsmanship: We take pride in sourcing high-quality products and collaborating
+                        with skilled artisans to ensure every item is crafted with precision and care.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Personalization:</span>
+                        We understand the importance of personal touches. Many of our products can be customized with
+                        names, messages, or special designs, making your gift truly unique.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Wide Variety: </span>
+                        With a diverse range of products, we cater to a wide audience and offer solutions for various
+                        occasions, from birthdays and anniversaries to festivals and corporate events.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Convenience: </span>
+                        Shopping with KS Arts Collection is hassle-free and convenient. Our online platform allows you
+                        to browse, select, and order your gifts from the comfort of your home.
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p><span>Customer Satisfaction: <br></span>
+                        At KS Arts Collection, customer satisfaction is our top priority. We are unwavering in our
+                        commitment to surpassing expectations with every purchase. Our dedicated team is steadfast in
+                        delivering superior quality products punctually, ensuring a shopping experience that is not only
+                        seamless but also thoroughly enjoyable..
+                    </p>
+                </div>
+                <div class="content-para">
+                    <p>Join us in celebrating life's special moments with thoughtful, personalized gifts. At KS Arts
+                        Collection, we are dedicated to helping you make memories that last a lifetime.</p>
+                </div>
+            </div>
+    </section>
+    <!-- ****footer start**** -->
+    <footer>
+        <div class="footer-up">
+            <div class="Footer-lt">
+                <h3>Quick links</h3>
+                <a href="">Ceramic Pot Planter</a>
+                <a href="">Resin Pot Planter</a>
+                <a href="">Bonsai Tray Planter</a>
+                <a href="">Garden Gift</a>
+                <a href="">Customized Gift Hamper</a>
+                <a href="">Chocolate Gift Box</a>
+                <a href="">Diwali</a>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="Footer-rt">
+                <h2>
+                    KS Arts Collection is Your Ultimate Destination for Personalized Gifts and Customized Gifting
+                    Solutions
+                </h2>
+                <p>
+                    We hold the belief that each gift should be as exceptional as the individual who receives it.That's
+                    why
+                    we specialize in offering a wide range of personalized gifts and customized gifting solutions to
+                    help
+                    you create meaningful and memorable presents for your loved ones.
+                    KS Arts Collection is more than just an online gift shop; we're a celebration of love, friendship,
+                    and
+                    the joy of giving. Join us in making every moment special and creating cherished memories that last
+                    a
+                    lifetime. Shop with us today and experience the joy of personalized gifting like never before.
+                </p>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="footer-icon">
+                <div class="icon">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <i class="fa-brands fa-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                </div>
+            </div>
+            <div class="footer-content">
+                <li id="list">© 2023, KS ARTS COLLECTION</li>
+                <li>Refund policy</li>
+                <li>Privacy policy</li>
+                <li>Terms of service</li>
+                <li>Shipping policy</li>
+                <li>Contact information</li>
+            </div>
+        </div>
+    </footer>
+    <!-- ****footer end**** -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- ------------- -->
+    <script>
+
+        function check() {
+            var user = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            var a = document.getElementById("e");
+            var p = document.getElementById("p");
+            if (user == "") {
+                a.innerHTML = "*Please fill up your email id"
+                a.style.color = "red"
+                a.style.fontSize = "12px"
+            }
+            if (pass == "") {
+                p.innerHTML = "*Please fill up your password"
+                p.style.color = "red"
+                p.style.fontSize = "12px"
+            }
+
+        }
+    </script>
+
+    <script>
+        var j = document.getElementById("op4")
+        j.addEventListener("mouseleave", function () {
+            j.src = "https://ksartscollection.com/cdn/shop/files/KS-Christmas-Tree-candle-holder.jpg?v=1703241877&width=360"
+        })
+        var i = document.getElementById("op3")
+        i.addEventListener("mouseleave", function () {
+            i.src = "https://ksartscollection.com/cdn/shop/files/KS-Rendeer-Christmas-Candle-Holder.jpg?v=1703242148&width=360"
+        })
+        var o = document.getElementById("op2")
+        o.addEventListener("mouseleave", function () {
+            o.src = "https://ksartscollection.com/cdn/shop/files/KS-Christmas-Chocolate-Gift-Pack.jpg?v=1703435444&width=360"
+        })
+        var p = document.getElementById("op")
+        p.addEventListener("mouseleave", function () {
+            p.src = "https://ksartscollection.com/cdn/shop/files/KS-Chocolate-Gift-Boxes.jpg?v=1704045350&width=360"
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart &ndash; KS ARTS COLLECTION</title>
+    <link rel="shortcut icon"
+        href="https://ksartscollection.com/cdn/shop/files/KS-FAVICON.png?crop=center&height=32&v=1684318818&width=32"
+        type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .ads {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #103948;
+        color: white;
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+
+    .hed {
+        width: 100%;
+        background-color: #FCEFDF;
+        overflow: hidden;
+    }
+
+    header {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    header .header-search a {
+        color: black;
+    }
+
+    header .header-search a:hover {
+        color: blueviolet;
+    }
+
+    header .header-logo {
+        width: 9%;
+    }
+
+    header .header-logo img {
+        width: 100%;
+    }
+
+    header .header-icon a {
+        color: black;
+    }
+
+    header .header-icon a:hover {
+        color: blueviolet;
+    }
+
+    .user {
+        margin-left: 12px;
+    }
+
+    .header {
+        width: 90%;
+        margin: 5% auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .header-select a {
+        color: black;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .header .header-select a:hover {
+        text-decoration: underline;
+    }
+
+    .header .header-select select:hover {
+        text-decoration: underline;
+    }
+
+    .header .header-select select {
+        border: none;
+        background-color: #FCEFDF;
+        margin-left: 10px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    /* header end  */
+
+    .cart{
+        width: fit-content;
+        margin: 2% auto;
+        text-align: center;
+        padding: 8%;
+    }
+
+    .cart h1{
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-bottom: 5%;
+        }
+
+    .cart a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: #103948;
+        padding: 10px 30px;
+    }
+    /* cart end  */
+
+    footer {
+    width: 100%;
+    background-color: #593625;
+    color: white;
+    padding: 2% 0%;
+}
+
+.footer-up {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2% 0%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #7f4b33;
+}
+
+.Footer-lt {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-lt h3 {
+    padding-bottom: 2%;
+}
+
+.Footer-lt a {
+    color: white;
+    text-decoration: none;
+    padding: 2% 0%;
+}
+
+.Footer-lt a:hover {
+    text-decoration: underline;
+}
+
+.Footer-lt input {
+    color: white;
+    width: 55%;
+    background-color: #593625;
+    border: 1px solid white;
+    margin-top: 8%;
+    padding: 15px 5px;
+}
+
+.Footer-lt input::placeholder {
+    color: white;
+}
+
+.footer-up .Footer-rt {
+    width: 45%;
+}
+
+.Footer-rt h2 {
+    padding-bottom: 5%;
+}
+
+.Footer-rt p {
+    line-height: px;
+    font-size: 20px;
+    padding-bottom: 4%;
+}
+
+.Footer-rt .icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0% 2%;
+}
+
+.Footer-rt i {
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+.footer-down {
+    width: 95%;
+    margin: 2% auto 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-icon {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* margin-left: 15%; */
+}
+
+.footer-icon i {
+    font-size: 25px;
+    color: white;
+    padding-left: 30px;
+}
+
+.footer-content{
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+
+}
+
+#list{
+    list-style: none;
+}
+
+.footer-content .content{
+    width: fit-content;
+}
+.footer-content li{
+    margin-top: 3%;
+    padding-left: 30px;
+}
+</style>
+
+<body>
+    <section class="hed">
+        <div class="ads">
+            <marquee behavior="" dirsection="">
+                <h2>Welcome to our online gift shop | Get Free Delivery | 10% Discount on First Order</h2>
+            </marquee>
+            </div>
+
+        <!-- ****header start**** -->
+        <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="header-search">
+                <a href="/Search.html" target="_parent">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="Gift.html"><img
+                        src="https://ksartscollection.com/cdn/shop/files/Your_1_Online_Gift_Shop_for_Customized_and_PERSONALISED_GIFTS.png?v=1694957644&width=135"
+                        alt=""></a>
+            </div>
+            <div class="header-icon">
+                <a href="#"><i class="fa-solid fa-bag-shopping fa-2xl"></i></a>
+                <a href="#"><i class="fa-solid fa-user fa-2xl user"></i></a>
+            </div>
+            <!-- <a href=""><i class="fa-solid fa-bars" id="bar"></i></a> -->
+        </header>
+        <div class="header" data-aos="zoom-out" data-aos-duration="3000" data-aos-easing="linear">
+            <div class="header-select">
+                <a href="Gift.html">Home</a>
+                <a href="shopall.html">Shop All</a>
+                <select name="Gifts Hamper">
+                    <option value="Gifts Hamper">All Gifts Hamper</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Annivarsary Gifts">Annivarsary Gifts</option>
+                </select>
+                <select>
+                    <option value="Garden Gift">Garden Gift</option>
+                    <option value="Planter">Planter</option>
+                    <option value="Gift of Plants">Gift of Plants</option>
+                    <option value="Plant care">Plant care</option>
+                </select>
+                <a href="Showpiece.html">Idol & Showpiece</a>
+                <a href="#">Home and Interior Gifts</a>
+                <select name="Aromatic Gift">
+                    <option value="Aromatic Gift">Aromatic Gift</option>
+                    <option value="Scented Candle">Scented Candle</option>
+                    <option value="Oil Diffuser">Oil Diffuser</option>
+                </select>
+                <a href="#">Greeting Card</a>
+                <select>
+                    <option value="Customer Portal">Customer Portal</option>
+                    <option value="About Us">About Us</option>
+                    <option value="FAQS">FAQS</option>
+                    <option value="Blogs">Blogs</option>
+                    <option value="Contact">Contact</option>
+                    <option value="Track Order">Track Order</option>
+                </select>
+            </div>
+        </div>
+        <!-- ****header end**** -->
+        <div class="cart">
+                <h1>Your cart is empty</h1>
+            <a href="Gift.html">Continue shopping</a>
+        </div>
+    </section>
+    <!-- ****footer start**** -->
+    <footer>
+        <div class="footer-up">
+            <div class="Footer-lt">
+                <h3>Quick links</h3>
+                <a href="">Ceramic Pot Planter</a>
+                <a href="">Resin Pot Planter</a>
+                <a href="">Bonsai Tray Planter</a>
+                <a href="">Garden Gift</a>
+                <a href="">Customized Gift Hamper</a>
+                <a href="">Chocolate Gift Box</a>
+                <a href="">Diwali</a>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="Footer-rt">
+                <h2>
+                    KS Arts Collection is Your Ultimate Destination for Personalized Gifts and Customized Gifting
+                    Solutions
+                </h2>
+                <p>
+                    We hold the belief that each gift should be as exceptional as the individual who receives it.That's
+                    why
+                    we specialize in offering a wide range of personalized gifts and customized gifting solutions to
+                    help
+                    you create meaningful and memorable presents for your loved ones.
+                    KS Arts Collection is more than just an online gift shop; we're a celebration of love, friendship,
+                    and
+                    the joy of giving. Join us in making every moment special and creating cherished memories that last
+                    a
+                    lifetime. Shop with us today and experience the joy of personalized gifting like never before.
+                </p>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="footer-icon">
+                <div class="icon">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <i class="fa-brands fa-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                </div>
+            </div>
+            <div class="footer-content">
+                    <li id="list">© 2023, KS ARTS COLLECTION</li>
+                    <li>Refund policy</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of service</li>
+                    <li>Shipping policy</li>
+                    <li>Contact information</li>
+            </div>
+        </div>
+    </footer>
+    <!-- ****footer end**** -->
+</body>
+
+</html>
